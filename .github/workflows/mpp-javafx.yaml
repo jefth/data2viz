@@ -16,7 +16,7 @@ jobs:
           java-package: jdk+fx # (jre, jdk, or jdk+fx)
 
       - name: Install xvfb
-       run: sudo apt-get install xvfb
+        run: sudo apt-get install xvfb
 
       - name: Build with Gradle
         run: ./gradlew check -Pinclude_android=false -Pinclude_js=false -Pinclude_jfx=true
